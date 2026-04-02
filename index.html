@@ -9,6 +9,10 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <div id="page-top">
+   <a href="#"></a>
+  </div>
+
 </head>
 
 <body>
@@ -234,6 +238,20 @@
   <script src="js/jquery-3.3.1.min.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
   <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  　<script>
+    $(function() {
+      $('#page-top a').click(function(e) {
+        e.preventDefault();
+       var position = 0;
+       var speed = 500;
+       $('html, body').animate({
+          scrollTop: position,
+       }, speed, 'swing');
+       return false;
+     });
+  });
+  </script>
 </body>
 
 </html>
